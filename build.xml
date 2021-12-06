@@ -1,7 +1,8 @@
 <?xml version="1.0" ?>
 <project name="java-ant-webapp" default="war">
+  <description>Builds, tests, and runs the project assigment_webshop_bo.</description>
   <path id="compile.classpath">
-    <fileset dir="WebContent/WEB-INF/lib">
+    <fileset dir="web/WEB-INF/lib">
       <include name="*.jar"/>
     </fileset>
   </path>
@@ -18,9 +19,9 @@
   </target>
 
   <target name="war" depends="compile">
-    <war destfile="dist/java-ant-webapp.war" webxml="WebContent/WEB-INF/web.xml">
-      <fileset dir="WebContent"/>
-      <lib dir="WebContent/WEB-INF/lib"/>
+    <war destfile="dist/java-ant-webapp.war" webxml="web/WEB-INF/web.xml">
+      <fileset dir="web"/>
+      <lib dir="web/WEB-INF/lib"/>
       <classes dir="build/classes"/>
     </war>
   </target>
