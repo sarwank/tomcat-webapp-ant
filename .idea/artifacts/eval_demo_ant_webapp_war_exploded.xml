@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="eval-demo-ant-webapp:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/eval_demo_ant_webapp_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="eval-demo-ant-webapp" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="eval-demo-ant-webapp/web/Web" />
+    </root>
+  </artifact>
+</component>
